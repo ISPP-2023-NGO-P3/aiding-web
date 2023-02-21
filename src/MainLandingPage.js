@@ -144,21 +144,21 @@ export default ({
       <Container tw="bg-gray-100 -mx-8 -mt-8 pt-8 px-8">
         <Content2Xl>
           <NavRow>
-            <LogoLink href="/">
-              <img src={logo} alt="/" />
+            <LogoLink href="#modules">
+              <img src={logo} alt="" />
             </LogoLink>
             <div tw="flex flex-wrap justify-center lg:justify-end items-center -mr-12">
-              <NavLink target="_blank" href="#modules">
+              <NavLink target="" href="#modules">
                 Soluciones
               </NavLink>
-              <NavLink target="_blank" href="#modules">
+              <NavLink target="" href="#pricing">
                 Precios
               </NavLink>
-              <NavLink target="_blank" href="#modules">
+              <NavLink target="" href="#about">
                 ¿Quiénes somos?
               </NavLink>
               <div tw="md:hidden flex-100 h-0"></div>
-              <PrimaryNavLink target="_blank" href="#pricing">
+              <PrimaryNavLink target="" href="#pricing">
                 Empieza ahora
               </PrimaryNavLink>
             </div>

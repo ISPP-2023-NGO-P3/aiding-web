@@ -88,7 +88,7 @@ export default ({
     {
       name: "De 4 a 5 módulos",
       price: ["25€/mes"],
-      description: "El más económico. Pensado para empresas que busquen añadirle más funcionalidades a su web a bajo coste.",
+      description: "Para empresas que busquen añadirle más funcionalidades a su web a bajo coste.",
       features: [
       ],
       featured: "El más económico"
@@ -103,7 +103,7 @@ export default ({
     {
       name: "Módulo personalizado",
       price: ["Precio variable"],
-      description: "si no encuentras tu módulo ideal, puede pedirnos un módulo personalizado.",
+      description: "Si no encuentras tu módulo ideal, puede pedirnos un módulo personalizado.",
       features: [
       ],
     }
