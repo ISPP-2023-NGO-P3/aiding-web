@@ -18,15 +18,18 @@ import { ReactComponent as RadioIcon } from "feather-icons/dist/icons/radio.svg"
 import { ReactComponent as HandleIcon } from "images/handle-icon.svg";
 import { ReactComponent as ArrowRightIcon } from "images/arrow-right-3-icon.svg";
 
-import heroScreenshotImageSrc from "images/demo/MainLandingPageHero.png";
+import heroScreenshotImageSrc from "images/demo/aiding_main.jpg";
 import logo from "images/lgoo2_1.svg";
 import useInView from "helpers/useInView";
 
 // Components
 import Modules from "components/features/ThreeColWithSideImageWithPrimaryBackground.js";
 import Pricing from "components/pricing/ThreePlansWithHalfPrimaryBackground.js";
+import ModulesPlan from "components/pricing/ModulesPlan";
 import Team from "components/cards/ProfileThreeColGrid.js"
 import Footer from 'components/footers/SimpleFiveColumn.js';
+import AboutUs from "components/features/TwoColSingleFeatureWithStats2.js";
+
 // import Modules from "components/features/ThreeColSimple.js"
 
 /* Hero */
@@ -105,7 +108,7 @@ export default ({
   //innerPages = components.innerPages,
   //blocks = components.blocks,
   heading = "Configura el futuro de tu organización",
-  description = "Easily customizable modern React UI Templates and Components built using TailwindCSS which are also lightweight and simple to setup. All components are modular and fully responsive for great mobile experience as well as big desktop screens.  Brand Colors are also fully customizable. Free for personal as well as commercial use."
+  description = "Aiding está a su disposición para ayudarle a la gestión de su organización mediante la creación y personalización de su web."
 }) => {
   /*
    * Using gtag like this because we only want to use Google Analytics when Main Landing Page is rendered
@@ -131,7 +134,7 @@ export default ({
   const noOfComponentBlocks = Object.values(blocks).reduce((acc, block) => acc + Object.keys(block.elements).length, 0); */
 
   features = features || [
-    `50 modulos a elegir`,
+    `7 modulos a elegir`,
     `Plan de precios flexible`,
     `Asistencia personalizada`,
   ];
@@ -148,14 +151,14 @@ export default ({
               <NavLink target="_blank" href="#modules">
                 Soluciones
               </NavLink>
-              <NavLink target="_blank" href="/">
+              <NavLink target="_blank" href="#modules">
                 Precios
               </NavLink>
-              <NavLink target="_blank" href="/">
-                Nuestro equipo
+              <NavLink target="_blank" href="#modules">
+                ¿Quiénes somos?
               </NavLink>
               <div tw="md:hidden flex-100 h-0"></div>
-              <PrimaryNavLink target="_blank" href="/">
+              <PrimaryNavLink target="_blank" href="#pricing">
                 Empieza ahora
               </PrimaryNavLink>
             </div>
@@ -192,9 +195,14 @@ export default ({
         </SectionContainer>
         <SectionContainer id="pricing">
           <Pricing/>
+          <ModulesPlan/>
         </SectionContainer>
-        <SectionContainer id="team">
+        
+        {/* <SectionContainer id="team">
           <Team/>
+        </SectionContainer> */}
+        <SectionContainer id="about">
+          <AboutUs/>
         </SectionContainer>
         <SectionContainer id="footer">
           <Footer/>

@@ -87,13 +87,13 @@ export default ({
 }) => {
   const defaultPlans = [
     {
-      name: "Free Plan",
+      name: "Plan Estándar",
       durationPrices: ["$0", "$0"],
       mainFeature: "For Personal Blogs",
       features: ["30 Templates", "7 Landing Pages", "12 Internal Pages", "Basic Assistance"]
     },
     {
-      name: "Pro Plan",
+      name: "Plan Premium",
       durationPrices: ["$49", "$499"],
       mainFeature: "Suited for Production Websites",
       features: ["60 Templates", "8 Landing Pages", "22 Internal Pages", "Priority Assistance", "Lifetime Updates"],

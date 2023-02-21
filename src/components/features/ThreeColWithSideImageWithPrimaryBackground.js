@@ -56,7 +56,7 @@ export default ({
   cards = null,
   heading = "Módulos",
   subheading = "",
-  description = "Nos adaptamos a las necesidades de tu organización"
+  description = "Nos adaptamos a las necesidades de tu organización."
 }) => {
   /*
    * This componets has an array of object denoting the cards defined below. Each object in the cards array can have the key (Change it according to your need, you can also add more objects to have more cards in this feature component) or you can directly pass this using the cards prop:
@@ -70,13 +70,15 @@ export default ({
     {
       imageSrc: ShieldIconImage,
       title: "Inventario",
-      description: "We strictly only deal with vendors that provide top notch security infrastructure."
+      description: "Este módulo permite añadir, eliminar y gestionar los diferentes elementos en la aplicación. También la gestión de donaciones de carácter no monetario."
     },
-    { imageSrc: SupportIconImage, title: "Notificaciones" },
-    { imageSrc: CustomizeIconImage, title: "Socios y donaciones" },
-    { imageSrc: ReliableIconImage, title: "Noticias" },
-    { imageSrc: FastIconImage, title: "Beneficiarios" },
-    { imageSrc: SimpleIconImage, title: "Voluntarios" }
+    { imageSrc: SupportIconImage, title: "Notificaciones", description: "Este módulo permite la gestión de comunicaciones entre los propios usuarios de nuestros servicios usando un sistema de notificaciones." },
+    { imageSrc: CustomizeIconImage, title: "Socios y donaciones", description: "Este módulo consiste en un sistema de gestión de los socios, permitiendo su registro, gestión y comunicación no automatizada." },
+    { imageSrc: ReliableIconImage, title: "Noticias", description: "Este módulo permite la gestión de comunicaciones entre los propios usuarios de nuestros servicios a través de un tablón de anuncios." },
+    { imageSrc: FastIconImage, title: "Beneficiarios", description: "Este módulo permite la registro, gestión y comunicación con los beneficiarios." },
+    { imageSrc: SimpleIconImage, title: "Voluntarios y turnos", description: "Este módulo permite a la organización registrar, gestionar, organizar y realizar comunicaciones con sus voluntarios y sus turnos." },
+    { imageSrc: SimpleIconImage, title: "Subvenciones", description: "Este módulo facilita la gestión de información sobre las subvenciones y donaciones recibidas, ambas de carácter exclusivamente monetario." }
+    
   ];
 
   if (!cards) cards = defaultCards;

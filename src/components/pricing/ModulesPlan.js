@@ -71,37 +71,41 @@ const WhiteBackgroundOverlay = tw.div`absolute inset-x-0 bottom-0 h-1/6 lg:h-1/3
 
 export default ({
   subheading = "",
-  heading = "Paga sólo por lo que necesites",
-  description = "Elige un plan y los módulos que se adapte a tus necesidades para comienza a gestionar tu organización de forma eficiente.",
+  heading = "Paquetes de módulos",
+  description = "Añade la cantidad que mejor se ajuste a tus necesidades.",
   plans = null,
   primaryButtonText = "Próximamente..."
 }) => {
   const defaultPlans = [
     {
-      name: "Estándar",
-      price: ["$20", ".00/mes"],
-      description: "Ideado para organizaciones que necesitan una plataforma de gestión básica",
+      name: "De 1 a 3 módulos",
+      price: ["15€/mes"],
+      description: "Para pequeños cambios sobre la web básica.",
       features: [
-        "Módulos base",
-        "20 GB SSD",	
-        "Atención al cliente personalizada",
-        "Resolucion de incidencias en menos de 72 horas",
       ],
 
     },
     {
-      name: "Premium",
-      price: ["$32", ".00/mes"],
-      description: "Perfecto para organizaciones con un alto nivel de exigencia que busquen soluciones escalables",
+      name: "De 4 a 5 módulos",
+      price: ["25€/mes"],
+      description: "El más económico. Pensado para empresas que busquen añadirle más funcionalidades a su web a bajo coste.",
       features: [
-        "Módulos base",
-        "40 GB SSD",	
-        "Atención al cliente personalizada y prioritaria",
-        "Resolucion de incidencias en menos de 24 horas",
-        "Personalización de módulos",
       ],
-  
-      featured: "El más popular"
+      featured: "El más económico"
+    },
+    {
+      name: "De 6 o más módulos",
+      price: ["30€/mes"],
+      description: "¿No te es suficiente? Este es el pack indicado.",
+      features: [
+      ],
+    },
+    {
+      name: "Módulo personalizado",
+      price: ["Precio variable"],
+      description: "si no encuentras tu módulo ideal, puede pedirnos un módulo personalizado.",
+      features: [
+      ],
     }
   ];
 
@@ -132,20 +136,21 @@ export default ({
                 </div>
                 <p className="description">{plan.description}</p>
               </PlanHeader>
-              <PlanFeatures>
+              {/* <PlanFeatures>
                 {plan.features.map((feature, index) => (
                   <li className="feature" key={index}>
                     <CheckboxIcon className="icon" />
                     <span className="text">{feature}</span>
                   </li>
                 ))}
-              </PlanFeatures>
+              </PlanFeatures> */}
               <PlanAction>
                 <ActionButton as="a" href={plan.url}>
                   {primaryButtonText}
                 </ActionButton>
               </PlanAction>
             </Plan>
+
           ))}
         </PlansContainer>
       </ContentWithPaddingXl>

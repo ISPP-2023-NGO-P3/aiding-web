@@ -41,71 +41,43 @@ export default () => {
         <WideColumn>
           <LogoContainer>
             <LogoImg src={LogoImage} />
-            <LogoText>Treact Inc.</LogoText>
+            <LogoText>Aiding</LogoText>
           </LogoContainer>
           <CompanyDescription>
-            Treact is an Internet Technology company providing design resources such as website templates and themes.
+            Compañía con una misión, ayudar.
           </CompanyDescription>
-          <SocialLinksContainer>
+          {/* <SocialLinksContainer>
             <SocialLink href="https://facebook.com">
               <FacebookIcon />
             </SocialLink>
             <SocialLink href="https://twitter.com">
               <TwitterIcon />
             </SocialLink>
-            <SocialLink href="https://youtube.com">
-              <YoutubeIcon />
-            </SocialLink>
-          </SocialLinksContainer>
+          </SocialLinksContainer> */}
         </WideColumn>
         <Column>
-          <ColumnHeading>Quick Links</ColumnHeading>
+          <ColumnHeading>Copyright© Aiding</ColumnHeading>
           <LinkList>
+           
             <LinkListItem>
-              <Link href="#">Blog</Link>
+              <Link href="#modules">Soluciones</Link>
             </LinkListItem>
             <LinkListItem>
-              <Link href="#">FAQs</Link>
+              <Link href="#pricing">Precios</Link>
             </LinkListItem>
             <LinkListItem>
-              <Link href="#">Support</Link>
-            </LinkListItem>
-            <LinkListItem>
-              <Link href="#">About Us</Link>
+              <Link href="#modules">Módulos</Link>
             </LinkListItem>
           </LinkList>
         </Column>
         <Column>
-          <ColumnHeading>Product</ColumnHeading>
+        <ColumnHeading>ISPP 2023</ColumnHeading>
           <LinkList>
             <LinkListItem>
-              <Link href="#">Log In</Link>
+              <Link href="#about">Quiénes somos</Link>
             </LinkListItem>
             <LinkListItem>
-              <Link href="#">Personal</Link>
-            </LinkListItem>
-            <LinkListItem>
-              <Link href="#">Business</Link>
-            </LinkListItem>
-            <LinkListItem>
-              <Link href="#">Team</Link>
-            </LinkListItem>
-          </LinkList>
-        </Column>
-        <Column>
-          <ColumnHeading>Legal</ColumnHeading>
-          <LinkList>
-            <LinkListItem>
-              <Link href="#">GDPR</Link>
-            </LinkListItem>
-            <LinkListItem>
-              <Link href="#">Privacy Policy</Link>
-            </LinkListItem>
-            <LinkListItem>
-              <Link href="#">Terms of Service</Link>
-            </LinkListItem>
-            <LinkListItem>
-              <Link href="#">Disclaimer</Link>
+              <Link href="#about">Privacy Policy</Link>
             </LinkListItem>
           </LinkList>
         </Column>

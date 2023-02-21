@@ -4,6 +4,8 @@ import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
 import { SectionHeading, Subheading as SubheadingBase } from "components/misc/Headings.js";
 import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
+import { PrimaryButtonDisabled as PrimaryButtonDisabled } from "components/misc/Buttons.js";
+
 import StatsIllustrationSrc from "images/stats-illustration.svg";
 import { ReactComponent as SvgDotPattern } from "images/dot-pattern.svg";
 
@@ -33,22 +35,23 @@ const Statistic = tw.div`text-left sm:inline-block sm:mr-12 last:mr-0 mt-4`;
 const Value = tw.div`font-bold text-lg sm:text-xl lg:text-2xl text-secondary-500 tracking-wide`;
 const Key = tw.div`font-medium text-primary-700`;
 
-const PrimaryButton = tw(PrimaryButtonBase)`mt-8 md:mt-10 text-sm inline-block mx-auto md:mx-0`;
+const PrimaryButton = tw(PrimaryButtonDisabled)`mt-8 md:mt-10 text-sm inline-block mx-auto md:mx-0`;
 
 const DecoratorBlob = styled(SvgDotPattern)(props => [
   tw`w-20 h-20 absolute right-0 bottom-0 transform translate-x-1/2 translate-y-1/2 fill-current text-primary-500 -z-10`
 ]);
 
 export default ({
-  subheading = "Our Track Record",
+  subheading = "Conócenos",
   heading = (
     <>
-      We have been doing this <wbr /> since <span tw="text-primary-500">1999.</span>
+      ¿Quiénes somos?
     </>
   ),
-  description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  description = "Detrás de Aiding, nos encontramos quince estudiantes de Ingeniería Informática del Software en la Universidad de Sevilla.",
+  description2 = "Nuestra motivación es ayudar a organizaciones a gestionar su inventario, a sus voluntarios, socios, subvenciones y más. Nuestro objetivo es desarrollar proyectos software, organizados en módulos según su funcionalidad, y que puedan ser adquirido por los clientes mediante planes de pagos.",
   primaryButtonText = "Learn More",
-  primaryButtonUrl = "https://timerse.com",
+  primaryButtonUrl = "",
   imageSrc = StatsIllustrationSrc,
   imageCss = null,
   imageContainerCss = null,
@@ -89,7 +92,9 @@ export default ({
             {subheading && <Subheading>{subheading}</Subheading>}
             <Heading>{heading}</Heading>
             <Description>{description}</Description>
-            <Statistics>
+            
+            <Description>{description2}</Description>
+            {/* <Statistics>
               {statistics.map((statistic, index) => (
                 <Statistic key={index}>
                   <Value>{statistic.value}</Value>
@@ -99,7 +104,7 @@ export default ({
             </Statistics>
             <PrimaryButton as="a" href={primaryButtonUrl}>
               {primaryButtonText}
-            </PrimaryButton>
+            </PrimaryButton> */}
           </TextContent>
         </TextColumn>
       </TwoColumn>
