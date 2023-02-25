@@ -29,6 +29,9 @@ import ModulesPlan from "components/pricing/ModulesPlan";
 import Team from "components/cards/ProfileThreeColGrid.js"
 import Footer from 'components/footers/SimpleFiveColumn.js';
 import AboutUs from "components/features/TwoColSingleFeatureWithStats2.js";
+import Faqs from "components/faqs/SingleCol.js";
+import Profiles from "components/cards/ProfileThreeColGrid.js"
+import ErrorPage from "ours/ErrorPageRecreate.js";
 
 // import Modules from "components/features/ThreeColSimple.js"
 
@@ -157,6 +160,9 @@ export default ({
               <NavLink target="" href="#about">
                 ¿Quiénes somos?
               </NavLink>
+              <NavLink target="" href="#error">
+                Página de error
+              </NavLink>
               <div tw="md:hidden flex-100 h-0"></div>
               <PrimaryNavLink target="" href="#pricing">
                 Empieza ahora
@@ -203,6 +209,13 @@ export default ({
         </SectionContainer> */}
         <SectionContainer id="about">
           <AboutUs/>
+          <Profiles/>
+        </SectionContainer>
+        <SectionContainer id="faqs">
+          <Faqs/>
+        </SectionContainer>
+        <SectionContainer id="error">
+          <ErrorPage/>
         </SectionContainer>
         <SectionContainer id="footer">
           <Footer/>
