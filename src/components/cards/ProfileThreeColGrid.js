@@ -8,7 +8,22 @@ import {SectionDescription} from "components/misc/Typography";
 import { ReactComponent as TwitterIcon} from "images/twitter-icon.svg";
 import { ReactComponent as LinkedinIcon} from "images/linkedin-icon.svg";
 import { ReactComponent as GithubIcon } from "images/github-icon.svg";
-
+import { ReactComponent as EmailIcon } from "images/email-newsletter-icon.svg";
+import NoeliaIcon from "images/fotos/noelia.jpeg";
+import AishaIcon from "images/fotos/aisha.jpeg";
+import CarlosIcon from "images/fotos/carlos.jpeg";
+import JoseIcon from "images/fotos/jose.jpeg";
+import JuanjoIcon from "images/fotos/juanjo.jpeg";
+import MarcosIcon from "images/fotos/marcos.jpeg";
+import ManuelDIcon from "images/fotos/manuelD.jpeg";
+import ManuelSIcon from "images/fotos/manuelS.jpeg";
+import MarinaIcon from "images/fotos/marina.jpeg";
+import NicoIcon from "images/fotos/nico.jpeg";
+import OlivaIcon from "images/fotos/oliva.jpeg";
+import RickIcon from "images/fotos/rick.jpeg";
+import RubenIcon from "images/fotos/ruben.jpeg";
+import CeliaIcon from "images/fotos/celia.jpg";
+import RosaIcon from "images/fotos/rosa.jpeg";
 const HeadingContainer = tw.div``
 const Heading = tw(SectionHeading)``
 const Subheading = tw(SubheadingBase)`text-center mb-3`
@@ -46,13 +61,13 @@ export default ({
   description = "",
   cards = [
     {
-      imageSrc: "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&fit=facearea&facepad=2.95&w=512&h=512&q=80",
+      imageSrc: NoeliaIcon,
       position: "Project Manajer",
       name: "Noelia López Durán",
       links: [
         {
-          url: "noelopdur@alum.us.es ",
-          icon: GithubIcon,
+          url: "mailto:noelopdur@alum.us.es",
+          icon: EmailIcon,
         },
         {
           url: " https://github.com/lNoelia ",
@@ -61,13 +76,13 @@ export default ({
       ],
     },
     {
-      imageSrc: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&fit=facearea&facepad=2.95&w=512&h=512&q=80",
+      imageSrc: RosaIcon,
       position: "Designer",
       name: "Rosa Maria Molina Arregui",
       links: [
         {
-          url: "rosmolarr@alum.us.es",
-          icon: TwitterIcon,
+          url: "mailto:rosmolarr@alum.us.es",
+          icon: EmailIcon,
         },
         {
           url: "https://github.com/rosmolarr",
@@ -76,13 +91,13 @@ export default ({
       ],
     },
     {
-      imageSrc: "https://images.unsplash.com/photo-1517070208541-6ddc4d3efbcb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&fit=facearea&facepad=2.95&w=512&h=512&q=80",
+      imageSrc: ManuelSIcon,
       position: "Jr. Designer",
       name: "Manuel Sánchez Rodríguez",
       links: [
         {
-          url: "manuelsanchez595@gmail.com",
-          icon: TwitterIcon,
+          url: "mailto:manuelsanchez595@gmail.com",
+          icon: EmailIcon,
         },
         {
           url: "https://github.com/mansanrod4 ",
@@ -91,13 +106,13 @@ export default ({
       ],
     },
     {
-      imageSrc: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&fit=facearea&facepad=2.95&w=512&h=512&q=80",
+      imageSrc: NicoIcon,
       position: "Lead Developer",
       name: "Nicolás Sánchez Mendoza",
       links: [
         {
-          url: "nicsanmen@alum.us.es",
-          icon: TwitterIcon,
+          url: "mailto:nicsanmen@alum.us.es",
+          icon: EmailIcon,
         },
         {
           url: "https://github.com/nicsanmen",
@@ -106,13 +121,13 @@ export default ({
       ],
     },
     {
-      imageSrc: "https://images.unsplash.com/photo-1546820389-44d77e1f3b31?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&fit=facearea&facepad=3.45&w=512&h=512&q=80",
+      imageSrc: OlivaIcon,
       position: "Sr. Developer",
       name: "Oliva Sánchez Rodríguez",
       links: [
         {
-          url: "sanchezroliva@gmail.com",
-          icon: TwitterIcon,
+          url: "mailto:sanchezroliva@gmail.com",
+          icon: EmailIcon,
         },
         {
           url: "https://github.com/olisanrod",
@@ -121,13 +136,13 @@ export default ({
       ],
     },
     {
-      imageSrc: "https://images.unsplash.com/photo-1546820389-44d77e1f3b31?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&fit=facearea&facepad=3.45&w=512&h=512&q=80",
+      imageSrc: MarcosIcon,
       position: "Sr. Developer",
       name: "Marcos Olmedo Marín",
       links: [
         {
-          url: "molmedom2000@gmail.com",
-          icon: LinkedinIcon,
+          url: "mailto:emolmedom2000@gmail.com",
+          icon: EmailIcon,
         },
         {
           url: "https://github.com/marolmmar1",
@@ -136,13 +151,13 @@ export default ({
       ],
     },
     {
-      imageSrc: "https://images.unsplash.com/photo-1546820389-44d77e1f3b31?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&fit=facearea&facepad=3.45&w=512&h=512&q=80",
+      imageSrc: CarlosIcon,
       position: "Sr. Developer",
       name: "Carlos Delgado Becerril",
       links: [
         {
-          url: "cardelbec@alum.us.es",
-          icon: TwitterIcon,
+          url: "mailto:cardelbec@alum.us.es",
+          icon: EmailIcon,
         },
         {
           url: "https://github.com/cardelbec",
@@ -151,13 +166,13 @@ export default ({
       ],
     },
     {
-      imageSrc: "https://images.unsplash.com/photo-1546820389-44d77e1f3b31?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&fit=facearea&facepad=3.45&w=512&h=512&q=80",
+      imageSrc: RickIcon,
       position: "Sr. Developer",
       name: "Ricardo Nadal Garcia",
       links: [
         {
-          url: "nadalrick@gmail.com",
-          icon: LinkedinIcon,
+          url: "mailto:nadalrick@gmail.com",
+          icon: EmailIcon,
         },
         {
           url: "https://github.com/Rick3600",
@@ -166,13 +181,13 @@ export default ({
       ],
     },
     {
-      imageSrc: "https://images.unsplash.com/photo-1546820389-44d77e1f3b31?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&fit=facearea&facepad=3.45&w=512&h=512&q=80",
+      imageSrc: ManuelDIcon,
       position: "Sr. Developer",
       name: "Manuel Domínguez Magdaleno",
       links: [
         {
-          url: "mandommag@alum.us.es",
-          icon: TwitterIcon,
+          url: "mailto:mandommag@alum.us.es",
+          icon: EmailIcon,
         },
         {
           url: "https://github.com/Manueldm01",
@@ -181,13 +196,13 @@ export default ({
       ],
     },
     {
-      imageSrc: "https://images.unsplash.com/photo-1546820389-44d77e1f3b31?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&fit=facearea&facepad=3.45&w=512&h=512&q=80",
+      imageSrc: CeliaIcon,
       position: "Sr. Developer",
       name: "Celia Hermoso Soto",
       links: [
         {
-          url: "celhersot@alum.us.es",
-          icon: LinkedinIcon,
+          url: "mailto:celhersot@alum.us.es",
+          icon: EmailIcon,
         },
         {
           url: "https://github.com/celhersot",
@@ -196,13 +211,13 @@ export default ({
       ],
     },
     {
-      imageSrc: "https://images.unsplash.com/photo-1546820389-44d77e1f3b31?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&fit=facearea&facepad=3.45&w=512&h=512&q=80",
+      imageSrc: RubenIcon,
       position: "Sr. Developer",
       name: "Rubén Suárez David",
       links: [
         {
-          url: "rubsuadav@alum.us.es",
-          icon: TwitterIcon,
+          url: "mailto:rubsuadav@alum.us.es",
+          icon: EmailIcon,
         },
         {
           url: "https://github.com/rubsuadav",
@@ -211,13 +226,13 @@ export default ({
       ],
     },
     {
-      imageSrc: "https://images.unsplash.com/photo-1546820389-44d77e1f3b31?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&fit=facearea&facepad=3.45&w=512&h=512&q=80",
+      imageSrc: JuanjoIcon,
       position: "Sr. Developer",
       name: "Juan José Álvarez Campanón",
       links: [
         {
-          url: "Juanjoalvarezcampanon@gmail.com",
-          icon: TwitterIcon,
+          url: "mailto:Juanjoalvarezcampanon@gmail.com",
+          icon: EmailIcon,
         },
         {
           url: "https://github.com/juaalvcam",
@@ -226,13 +241,13 @@ export default ({
       ],
     },
     {
-      imageSrc: "https://images.unsplash.com/photo-1546820389-44d77e1f3b31?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&fit=facearea&facepad=3.45&w=512&h=512&q=80",
+      imageSrc: MarinaIcon,
       position: "Sr. Developer",
       name: "Marina Ramiro Fernández",
       links: [
         {
-          url: "marinaramirofde@gmail.com",
-          icon: LinkedinIcon,
+          url: "mailto:marinaramirofde@gmail.com",
+          icon: EmailIcon,
         },
         {
           url: "https://github.com/marinaramirofde",
@@ -241,13 +256,13 @@ export default ({
       ],
     },
     {
-      imageSrc: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&fit=facearea&facepad=3.45&w=512&h=512&q=80",
+      imageSrc: AishaIcon,
       position: "Quality Assurance",
       name: "Aisha Doris Qazza Cevallos",
       links: [
         {
-          url: "aishaqazza@gmail.com",
-          icon: TwitterIcon,
+          url: "mailto:aishaqazza@gmail.com",
+          icon: EmailIcon,
         },
         {
           url: "https://github.com/aisqazcev",
@@ -256,13 +271,13 @@ export default ({
       ],
     },
     {
-      imageSrc: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&fit=facearea&facepad=3.45&w=512&h=512&q=80",
+      imageSrc: JoseIcon,
       position: "Quality Assurance",
       name: "José María Delgado Sánchez",
       links: [
         {
-          url: "josdelsan9@alum.us.es",
-          icon: TwitterIcon,
+          url: "mailto:josdelsan9@alum.us.es",
+          icon: EmailIcon,
         },
         {
           url: "https://github.com/Josdelsan",
