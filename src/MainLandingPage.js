@@ -33,6 +33,11 @@ import Faqs from "components/faqs/SingleCol.js";
 import Profiles from "components/cards/ProfileThreeColGrid.js"
 import ErrorPage from "ours/ErrorPageRecreate.js";
 
+// Npm installs
+import ScrollToTop from "react-scroll-to-top";
+
+// Css nuestro
+import './ourscss/scroll.css';
 // import Modules from "components/features/ThreeColSimple.js"
 
 /* Hero */
@@ -219,6 +224,7 @@ export default ({
         </SectionContainer>
         <SectionContainer id="footer">
           <Footer/>
+          <ScrollToTop class="scroll-to-top" smooth />
         </SectionContainer>
       </Container>
     </AnimationRevealPage>
