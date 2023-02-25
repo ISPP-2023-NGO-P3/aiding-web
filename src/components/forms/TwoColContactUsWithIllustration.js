@@ -1,9 +1,7 @@
 import React from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
-import { css } from "styled-components/macro"; //eslint-disable-line
 import { SectionHeading, Subheading as SubheadingBase } from "components/misc/Headings.js";
-import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
 import EmailIllustrationSrc from "images/email-illustration.svg";
 
 const Container = tw.div`relative`;
@@ -25,18 +23,12 @@ const Subheading = tw(SubheadingBase)`text-center md:text-left`;
 const Heading = tw(SectionHeading)`mt-4 font-black text-left text-3xl sm:text-4xl lg:text-5xl text-center md:text-left leading-tight`;
 const Description = tw.p`mt-4 text-center md:text-left text-sm md:text-base lg:text-lg font-medium leading-relaxed text-secondary-100`
 
-const Form = tw.form`mt-8 md:mt-10 text-sm flex flex-col lg:flex-row`
-const Input = tw.input`border-2 px-5 py-3 rounded focus:outline-none font-medium transition duration-300 hocus:border-primary-500`
-
-const SubmitButton = tw(PrimaryButtonBase)`inline-block lg:ml-6 mt-6 lg:mt-0`
-
 export default ({
-  subheading = "Contact Us",
-  heading = <>Feel free to <span tw="text-primary-500">get in touch</span><wbr/> with us.</>,
-  description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-  submitButtonText = "Contact Me",
-  formAction = "#",
-  formMethod = "get",
+  subheading = "¿Cómo podemos ayudarte?",
+  subheading2 = "¿Tienes alguna sugerencia que darnos?",
+  heading = <>Ponte en contacto<span tw="text-primary-500"> con nuestros expertos </span><wbr/>hoy mismo.</>,
+  description = "Si eres una ONG, start up o asociación y necesitas asesoramiento sobre nuestros servicios, sólo tienes que ponerte en contacto con nosotros y te responderemos lo antes posible.",
+  description2 = "Oficina Principal: ETSII, Universidad de Sevilla. Grupo 6 de ISPP de por la mañana.",
   textOnLeft = true,
 }) => {
   // The textOnLeft boolean prop can be used to display either the text on left or right side of the image.
@@ -50,12 +42,11 @@ export default ({
         <TextColumn textOnLeft={textOnLeft}>
           <TextContent>
             {subheading && <Subheading>{subheading}</Subheading>}
+            <Subheading>{subheading2}</Subheading>
             <Heading>{heading}</Heading>
             <Description>{description}</Description>
-            <Form action={formAction} method={formMethod}>
-              <Input type="email" name="email" placeholder="Your Email Address" />
-              <SubmitButton type="submit">{submitButtonText}</SubmitButton>
-            </Form>
+            <Description>{description2}</Description>
+            <img src="" alt='imageLink' href="mailto:aiding@gmail.com" ></img>
           </TextContent>
         </TextColumn>
       </TwoColumn>

@@ -26,12 +26,12 @@ import useInView from "helpers/useInView";
 import Modules from "components/features/ThreeColWithSideImageWithPrimaryBackground.js";
 import Pricing from "components/pricing/ThreePlansWithHalfPrimaryBackground.js";
 import ModulesPlan from "components/pricing/ModulesPlan";
-import Team from "components/cards/ProfileThreeColGrid.js"
 import Footer from 'components/footers/SimpleFiveColumn.js';
 import AboutUs from "components/features/TwoColSingleFeatureWithStats2.js";
 import Faqs from "components/faqs/SingleCol.js";
 import Profiles from "components/cards/ProfileThreeColGrid.js"
 import ErrorPage from "ours/ErrorPageRecreate.js";
+import ContactUs from "components/forms/TwoColContactUsWithIllustration.js"
 
 // Npm installs
 import ScrollToTop from "react-scroll-to-top";
@@ -222,9 +222,12 @@ export default ({
         <SectionContainer id="error">
           <ErrorPage/>
         </SectionContainer>
+        <SectionContainer id="contact">
+           <ContactUs/>
+        </SectionContainer>
         <SectionContainer id="footer">
-          <Footer/>
           <ScrollToTop class="scroll-to-top" smooth />
+          <Footer/>
         </SectionContainer>
       </Container>
     </AnimationRevealPage>
