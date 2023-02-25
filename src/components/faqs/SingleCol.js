@@ -44,24 +44,34 @@ export default ({
   description = "",
   faqs = [
     {
-      question: "Is lunch provided free of cost ?",
+      question: "¿Cómo se calcula el precio de un plan?",
       answer:
-        "Yes, it is, if you have a membership with us. Otherwise it is charged as per the menu. Some limits do apply as to how much items can be included in your lunch. This limit is enough for any one person and merely exists to discourage abusal of the system."
+        "En Aiding solo pagas por lo que necesitas. En nuestra web puedes contratar un plan estándar o premium y pagar por la cantidad de módulos que más se ajuste a las necesidades de tu organización. Debes saber que todos los planes tendrán un periodo de prueba totalmente gratuito de 14 días. También ofrecemos un descuento por suscripción anual del 15 % aproximadamente. Por ejemplo: Tu organización necesita atención priorizada al cliente y más de 20G en la nube, entonces es necesario contratar el plan premium. Además, crees necesario usar el módulo de gestión de voluntarios y turnos y el módulo de beneficiarios, por lo tanto, necesitas el pack que incluye 2 módulos, como mínimo. De esta forma el precio total al mes sería: precio del plan + precio del paquete de módulos. Y como has elegido plan premium + pack de 1 a 3 módulos, el precio sería: 15€ + 32€ = 47€ mensuales. Si tu suscripción es anual, en lugar de mensual, el precio sería: 564€ (precio total por año) - 84,60€ (el 15% del total) = 479,40€ al año. Por otro lado, si quisieras añadirle más módulos posteriormente, se recalcularía el precio de tu contrato y se añadirían los módulos que elijas. "
     },
     {
-      question: "Do you have 2 Bedroom suites ?",
+      question: "¿Qué módulos puedo incluir en mi web?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        "Con  Aiding puedes elegir la cantidad de módulos que más se ajuste a tus necesidades, desde 1 hasta más de 6. Además, con el plan premium, puedes modificar los módulos que desees. Si aun así ninguno de nuestros módulos te convence, puedes pedirnos un módulo personalizado."
     },
     {
-      question: "Are Wi-Fi costs included in the price ?",
+      question: "¿Cómo contacto con la empresa?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        "En esta misma web, podrás encontrar el apartado “Contáctanos” \u{1F600}"
     },
     {
-      question: "Where can I reach you for support ?",
+      question: "¿Aiding solo trabaja con ONGs? ",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        "En Aiding nos preocupamos por proporcionar soluciones mayoritariamente a organizaciones, pero no es nuestro único público objetivo. "
+    },
+    {
+      question: "¿Qué pasa si inicialmente deseo tener una cantidad de módulos pero necesitamos menos módulos?",
+      answer:
+        "Dependiendo de la suscripción de pago que elijas, tendrás una permanencia u otra. De esta forma, si decides cambiar de pack de módulos o plan teniendo una suscripción mensual, los cambios se aplicarán al mes siguiente. Si es una suscripción anual, los cambios deberán aplicarse al año siguiente. "
+    },
+    {
+      question: "¿Qué pasa con los datos de los módulos que ya no quiero tener? ¿Y con el espacio en la nube que ya no deseo? ",
+      answer:
+        "Desde el momento en que canceles el uso de uno o varios módulos, dispondrás de 1 año para acceder a todos los datos almacenados y descargarlos. De otra manera, se borrarán permanentemente. Pasará lo mismo con el espacio de la nube, dispondrás de 1 año para descargar los archivos subidos en ella. "
     }
   ]
 }) => {
