@@ -41,44 +41,36 @@ const CardLinks = styled.div`
 `
 
 export default ({
-  heading = "Meet These Fine Folks.",
-  subheading = "Our Team",
-  description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  heading = "Nuestro equipo.",
+  subheading = "",
+  description = "",
   cards = [
     {
       imageSrc: "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&fit=facearea&facepad=2.95&w=512&h=512&q=80",
-      position: "Founder",
-      name: "Adam Cuppy",
+      position: "Project Manajer",
+      name: "Noelia López Durán",
       links: [
         {
-          url: "https://twitter.com",
-          icon: TwitterIcon,
+          url: "noelopdur@alum.us.es ",
+          icon: GithubIcon,
         },
         {
-          url: "https://linkedin.com",
-          icon: LinkedinIcon,
-        },
-        {
-          url: "https://github.com",
+          url: " https://github.com/lNoelia ",
           icon: GithubIcon,
         },
       ],
     },
     {
       imageSrc: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&fit=facearea&facepad=2.95&w=512&h=512&q=80",
-      position: "Sr. Designer",
-      name: "Charlotte Hale",
+      position: "Designer",
+      name: "Rosa Maria Molina Arregui",
       links: [
         {
-          url: "https://twitter.com",
+          url: "rosmolarr@alum.us.es",
           icon: TwitterIcon,
         },
         {
-          url: "https://linkedin.com",
-          icon: LinkedinIcon,
-        },
-        {
-          url: "https://github.com",
+          url: "https://github.com/rosmolarr",
           icon: GithubIcon,
         },
       ],
@@ -86,18 +78,14 @@ export default ({
     {
       imageSrc: "https://images.unsplash.com/photo-1517070208541-6ddc4d3efbcb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&fit=facearea&facepad=2.95&w=512&h=512&q=80",
       position: "Jr. Designer",
-      name: "Silvester Wize",
+      name: "Manuel Sánchez Rodríguez",
       links: [
         {
-          url: "https://twitter.com",
+          url: "manuelsanchez595@gmail.com",
           icon: TwitterIcon,
         },
         {
-          url: "https://linkedin.com",
-          icon: LinkedinIcon,
-        },
-        {
-          url: "https://github.com",
+          url: "https://github.com/mansanrod4 ",
           icon: GithubIcon,
         },
       ],
@@ -105,18 +93,14 @@ export default ({
     {
       imageSrc: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&fit=facearea&facepad=2.95&w=512&h=512&q=80",
       position: "Lead Developer",
-      name: "Himali Turn",
+      name: "Nicolás Sánchez Mendoza",
       links: [
         {
-          url: "https://twitter.com",
+          url: "nicsanmen@alum.us.es",
           icon: TwitterIcon,
         },
         {
-          url: "https://linkedin.com",
-          icon: LinkedinIcon,
-        },
-        {
-          url: "https://github.com",
+          url: "https://github.com/nicsanmen",
           icon: GithubIcon,
         },
       ],
@@ -124,18 +108,134 @@ export default ({
     {
       imageSrc: "https://images.unsplash.com/photo-1546820389-44d77e1f3b31?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&fit=facearea&facepad=3.45&w=512&h=512&q=80",
       position: "Sr. Developer",
-      name: "Troye Sivan",
+      name: "Oliva Sánchez Rodríguez",
       links: [
         {
-          url: "https://twitter.com",
+          url: "sanchezroliva@gmail.com",
           icon: TwitterIcon,
         },
         {
-          url: "https://linkedin.com",
+          url: "https://github.com/olisanrod",
+          icon: GithubIcon,
+        },
+      ],
+    },
+    {
+      imageSrc: "https://images.unsplash.com/photo-1546820389-44d77e1f3b31?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&fit=facearea&facepad=3.45&w=512&h=512&q=80",
+      position: "Sr. Developer",
+      name: "Marcos Olmedo Marín",
+      links: [
+        {
+          url: "molmedom2000@gmail.com",
           icon: LinkedinIcon,
         },
         {
-          url: "https://github.com",
+          url: "https://github.com/marolmmar1",
+          icon: GithubIcon,
+        },
+      ],
+    },
+    {
+      imageSrc: "https://images.unsplash.com/photo-1546820389-44d77e1f3b31?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&fit=facearea&facepad=3.45&w=512&h=512&q=80",
+      position: "Sr. Developer",
+      name: "Carlos Delgado Becerril",
+      links: [
+        {
+          url: "cardelbec@alum.us.es",
+          icon: TwitterIcon,
+        },
+        {
+          url: "https://github.com/cardelbec",
+          icon: GithubIcon,
+        },
+      ],
+    },
+    {
+      imageSrc: "https://images.unsplash.com/photo-1546820389-44d77e1f3b31?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&fit=facearea&facepad=3.45&w=512&h=512&q=80",
+      position: "Sr. Developer",
+      name: "Ricardo Nadal Garcia",
+      links: [
+        {
+          url: "nadalrick@gmail.com",
+          icon: LinkedinIcon,
+        },
+        {
+          url: "https://github.com/Rick3600",
+          icon: GithubIcon,
+        },
+      ],
+    },
+    {
+      imageSrc: "https://images.unsplash.com/photo-1546820389-44d77e1f3b31?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&fit=facearea&facepad=3.45&w=512&h=512&q=80",
+      position: "Sr. Developer",
+      name: "Manuel Domínguez Magdaleno",
+      links: [
+        {
+          url: "mandommag@alum.us.es",
+          icon: TwitterIcon,
+        },
+        {
+          url: "https://github.com/Manueldm01",
+          icon: GithubIcon,
+        },
+      ],
+    },
+    {
+      imageSrc: "https://images.unsplash.com/photo-1546820389-44d77e1f3b31?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&fit=facearea&facepad=3.45&w=512&h=512&q=80",
+      position: "Sr. Developer",
+      name: "Celia Hermoso Soto",
+      links: [
+        {
+          url: "celhersot@alum.us.es",
+          icon: LinkedinIcon,
+        },
+        {
+          url: "https://github.com/celhersot",
+          icon: GithubIcon,
+        },
+      ],
+    },
+    {
+      imageSrc: "https://images.unsplash.com/photo-1546820389-44d77e1f3b31?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&fit=facearea&facepad=3.45&w=512&h=512&q=80",
+      position: "Sr. Developer",
+      name: "Rubén Suárez David",
+      links: [
+        {
+          url: "rubsuadav@alum.us.es",
+          icon: TwitterIcon,
+        },
+        {
+          url: "https://github.com/rubsuadav",
+          icon: GithubIcon,
+        },
+      ],
+    },
+    {
+      imageSrc: "https://images.unsplash.com/photo-1546820389-44d77e1f3b31?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&fit=facearea&facepad=3.45&w=512&h=512&q=80",
+      position: "Sr. Developer",
+      name: "Juan José Álvarez Campanón",
+      links: [
+        {
+          url: "Juanjoalvarezcampanon@gmail.com",
+          icon: TwitterIcon,
+        },
+        {
+          url: "https://github.com/juaalvcam",
+          icon: GithubIcon,
+        },
+      ],
+    },
+    {
+      imageSrc: "https://images.unsplash.com/photo-1546820389-44d77e1f3b31?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&fit=facearea&facepad=3.45&w=512&h=512&q=80",
+      position: "Sr. Developer",
+      name: "Marina Ramiro Fernández",
+      links: [
+        {
+          url: "marinaramirofde@gmail.com",
+          icon: LinkedinIcon,
+        },
+        {
+          url: "https://github.com/marinaramirofde",
           icon: GithubIcon,
         },
       ],
@@ -143,18 +243,29 @@ export default ({
     {
       imageSrc: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&fit=facearea&facepad=3.45&w=512&h=512&q=80",
       position: "Quality Assurance",
-      name: "Holo Wo",
+      name: "Aisha Doris Qazza Cevallos",
       links: [
         {
-          url: "https://twitter.com",
+          url: "aishaqazza@gmail.com",
           icon: TwitterIcon,
         },
         {
-          url: "https://linkedin.com",
-          icon: LinkedinIcon,
+          url: "https://github.com/aisqazcev",
+          icon: GithubIcon,
+        },
+      ],
+    },
+    {
+      imageSrc: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&fit=facearea&facepad=3.45&w=512&h=512&q=80",
+      position: "Quality Assurance",
+      name: "José María Delgado Sánchez",
+      links: [
+        {
+          url: "josdelsan9@alum.us.es",
+          icon: TwitterIcon,
         },
         {
-          url: "https://github.com",
+          url: "https://github.com/Josdelsan",
           icon: GithubIcon,
         },
       ],
