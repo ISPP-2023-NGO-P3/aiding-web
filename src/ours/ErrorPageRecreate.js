@@ -91,8 +91,7 @@ export default ({
           <TextContent>
             {subheading && <Subheading>{subheading}</Subheading>}
             <Heading>{heading}</Heading>
-            <Description>{description}</Description>
-            
+            <Description><a href="/"> {description} </a></Description>
             <Description>{description2}</Description>
             {/* <Statistics>
               {statistics.map((statistic, index) => (

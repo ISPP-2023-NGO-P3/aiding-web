@@ -9,21 +9,21 @@ import { ReactComponent as TwitterIcon} from "images/twitter-icon.svg";
 import { ReactComponent as LinkedinIcon} from "images/linkedin-icon.svg";
 import { ReactComponent as GithubIcon } from "images/github-icon.svg";
 import { ReactComponent as EmailIcon } from "images/email-newsletter-icon.svg";
-import NoeliaIcon from "images/fotos/noelia.jpeg";
-import AishaIcon from "images/fotos/aisha.jpeg";
-import CarlosIcon from "images/fotos/carlos.jpeg";
-import JoseIcon from "images/fotos/jose.jpeg";
-import JuanjoIcon from "images/fotos/juanjo.jpeg";
-import MarcosIcon from "images/fotos/marcos.jpeg";
-import ManuelDIcon from "images/fotos/manuelD.jpeg";
-import ManuelSIcon from "images/fotos/manuelS.jpeg";
-import MarinaIcon from "images/fotos/marina.jpeg";
-import NicoIcon from "images/fotos/nico.jpeg";
-import OlivaIcon from "images/fotos/oliva.jpeg";
-import RickIcon from "images/fotos/rick.jpeg";
-import RubenIcon from "images/fotos/ruben.jpeg";
-import CeliaIcon from "images/fotos/celia.jpg";
-import RosaIcon from "images/fotos/rosa.jpeg";
+import NoeliaIcon from "images/fotos/noelia.png";
+import AishaIcon from "images/fotos/aisha.png";
+import CarlosIcon from "images/fotos/carlos.png";
+import JoseIcon from "images/fotos/jose.png";
+import JuanjoIcon from "images/fotos/juanjo.png";
+import MarcosIcon from "images/fotos/marcos.png";
+import ManuelDIcon from "images/fotos/manuelD.png";
+import ManuelSIcon from "images/fotos/manuelS.png";
+import MarinaIcon from "images/fotos/marina.png";
+import NicoIcon from "images/fotos/nico.png";
+import OlivaIcon from "images/fotos/oliva.png";
+import RickIcon from "images/fotos/rick.png";
+import RubenIcon from "images/fotos/ruben.png";
+import CeliaIcon from "images/fotos/celia.png";
+import RosaIcon from "images/fotos/rosa.png";
 const HeadingContainer = tw.div``
 const Heading = tw(SectionHeading)``
 const Subheading = tw(SubheadingBase)`text-center mb-3`
@@ -33,7 +33,7 @@ const Cards = tw.div`flex flex-wrap flex-row justify-center sm:max-w-2xl lg:max-
 const Card = tw.div`mt-24 w-full sm:w-1/2 lg:w-1/3 flex flex-col items-center`
 const CardImage = styled.div`
   ${props => css`background-image: url("${props.imageSrc}");`}
-  ${tw`w-64 h-64 bg-contain bg-center rounded`}
+  ${tw`w-64 h-64 bg-contain bg-cover rounded`}
 `
 const CardContent = styled.div`
   ${tw`flex flex-col items-center mt-6`}
