@@ -40,6 +40,10 @@ const PrimaryButton = tw(PrimaryButtonDisabled)`mt-8 md:mt-10 text-sm inline-blo
 const DecoratorBlob = styled(SvgDotPattern)(props => [
   tw`w-20 h-20 absolute right-0 bottom-0 transform translate-x-1/2 translate-y-1/2 fill-current text-primary-500 -z-10`
 ]);
+const NavLink = tw.a`mt-4 lg:mt-0 transition duration-300 font-medium pb-1 border-b-2 mr-12 text-gray-700 border-gray-400 hocus:border-gray-700`;
+const PrimaryNavLink = tw(
+  NavLink
+)`text-gray-100 bg-primary-500 px-6 py-3 border-none rounded hocus:bg-primary-900 focus:shadow-outline mt-6 md:mt-4 lg:mt-0`;
 
 export default ({
   subheading = "Ups",
@@ -91,8 +95,11 @@ export default ({
           <TextContent>
             {subheading && <Subheading>{subheading}</Subheading>}
             <Heading>{heading}</Heading>
-            <Description><a href="/"> {description} </a></Description>
+            <Description> {description}</Description>
             <Description>{description2}</Description>
+            <Description><PrimaryNavLink target="" href="/">
+                Volver
+              </PrimaryNavLink></Description>
             {/* <Statistics>
               {statistics.map((statistic, index) => (
                 <Statistic key={index}>
