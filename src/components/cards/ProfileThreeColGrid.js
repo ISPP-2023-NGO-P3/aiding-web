@@ -62,7 +62,7 @@ export default ({
   cards = [
     {
       imageSrc: NoeliaIcon,
-      position: "Project Manajer",
+      position: "Developer y Secretary",
       name: "Noelia López Durán",
       links: [
         {
@@ -77,7 +77,7 @@ export default ({
     },
     {
       imageSrc: RosaIcon,
-      position: "Designer",
+      position: "Project Manager y Scrum Master",
       name: "Rosa Maria Molina Arregui",
       links: [
         {
@@ -92,7 +92,7 @@ export default ({
     },
     {
       imageSrc: ManuelSIcon,
-      position: "Jr. Designer",
+      position: "Quality Assurance",
       name: "Manuel Sánchez Rodríguez",
       links: [
         {
@@ -107,7 +107,7 @@ export default ({
     },
     {
       imageSrc: NicoIcon,
-      position: "Lead Developer",
+      position: "Project Manajer y Scrum Master",
       name: "Nicolás Sánchez Mendoza",
       links: [
         {
@@ -122,7 +122,7 @@ export default ({
     },
     {
       imageSrc: OlivaIcon,
-      position: "Sr. Developer",
+      position: "Product Owner y Directora de Marketing",
       name: "Oliva Sánchez Rodríguez",
       links: [
         {
@@ -137,7 +137,7 @@ export default ({
     },
     {
       imageSrc: MarcosIcon,
-      position: "Sr. Developer",
+      position: "Developer",
       name: "Marcos Olmedo Marín",
       links: [
         {
@@ -152,7 +152,7 @@ export default ({
     },
     {
       imageSrc: CarlosIcon,
-      position: "Sr. Developer",
+      position: "Quality Assurance",
       name: "Carlos Delgado Becerril",
       links: [
         {
@@ -167,7 +167,7 @@ export default ({
     },
     {
       imageSrc: RickIcon,
-      position: "Sr. Developer",
+      position: "Quality Assurance",
       name: "Ricardo Nadal Garcia",
       links: [
         {
@@ -182,7 +182,7 @@ export default ({
     },
     {
       imageSrc: ManuelDIcon,
-      position: "Sr. Developer",
+      position: "Product Owner",
       name: "Manuel Domínguez Magdaleno",
       links: [
         {
@@ -197,7 +197,7 @@ export default ({
     },
     {
       imageSrc: CeliaIcon,
-      position: "Sr. Developer",
+      position: "Product Owner y Secretary",
       name: "Celia Hermoso Soto",
       links: [
         {
@@ -212,7 +212,7 @@ export default ({
     },
     {
       imageSrc: RubenIcon,
-      position: "Sr. Developer",
+      position: "Developer",
       name: "Rubén Suárez David",
       links: [
         {
@@ -227,7 +227,7 @@ export default ({
     },
     {
       imageSrc: JuanjoIcon,
-      position: "Sr. Developer",
+      position: "Developer",
       name: "Juan José Álvarez Campanón",
       links: [
         {
@@ -242,7 +242,7 @@ export default ({
     },
     {
       imageSrc: MarinaIcon,
-      position: "Sr. Developer",
+      position: "Developer",
       name: "Marina Ramiro Fernández",
       links: [
         {
@@ -257,7 +257,7 @@ export default ({
     },
     {
       imageSrc: AishaIcon,
-      position: "Quality Assurance",
+      position: "Developer y Directora de Marketing",
       name: "Aisha Doris Qazza Cevallos",
       links: [
         {
@@ -272,7 +272,7 @@ export default ({
     },
     {
       imageSrc: JoseIcon,
-      position: "Quality Assurance",
+      position: "Project Manager y Scrum Master",
       name: "José María Delgado Sánchez",
       links: [
         {
