@@ -9,6 +9,10 @@ import { Container, ContentWithPaddingXl } from "components/misc/Layouts.js";
 import { ReactComponent as ChevronDownIcon } from "feather-icons/dist/icons/chevron-down.svg";
 import { ReactComponent as SvgDecoratorBlob1 } from "images/svg-decorator-blob-7.svg";
 import { ReactComponent as SvgDecoratorBlob2 } from "images/svg-decorator-blob-8.svg";
+import ImgFaqs from "images/faqs.png";
+
+// CSS
+import "ourscss/imagestyle.css";
 
 const Subheading = tw(SubheadingBase)`mb-4 text-center`;
 const Heading = tw(SectionHeading)`w-full`;
@@ -40,6 +44,7 @@ const DecoratorBlob2 = styled(SvgDecoratorBlob2)`
 
 export default ({
   subheading = "FAQS",
+  imageSrc = ImgFaqs,
   heading = "Preguntas frecuentes",
   description = "",
   faqs = [
@@ -87,6 +92,7 @@ export default ({
       <ContentWithPaddingXl>
         <Column>
           <HeaderContent>
+            <img src={imageSrc}  class='ime' alt="" />
             {subheading && <Subheading>{subheading}</Subheading>}
             <Heading>{heading}</Heading>
             {description && <Description>{description}</Description>}
