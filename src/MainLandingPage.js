@@ -26,12 +26,22 @@ import useInView from "helpers/useInView";
 import Modules from "components/features/ThreeColWithSideImageWithPrimaryBackground.js";
 import Pricing from "components/pricing/ThreePlansWithHalfPrimaryBackground.js";
 import ModulesPlan from "components/pricing/ModulesPlan";
-import Team from "components/cards/ProfileThreeColGrid.js"
 import Footer from 'components/footers/SimpleFiveColumn.js';
 import AboutUs from "components/features/TwoColSingleFeatureWithStats2.js";
 import Faqs from "components/faqs/SingleCol.js";
 import Profiles from "components/cards/ProfileThreeColGrid.js"
+import ContactUs from "components/forms/TwoColContactUsWithIllustration.js";
 
+// Mapa
+import { Map, MapContainer, TileLayer } from "react-leaflet";
+
+// Npm installs
+import ScrollToTop from "react-scroll-to-top";
+
+// Css nuestro
+import './ourscss/scroll.css';
+import './ourscss/leaflet.css';
+import "leaflet/dist/leaflet.css";
 
 // import Modules from "components/features/ThreeColSimple.js"
 
@@ -143,7 +153,7 @@ export default ({
   ];
 
   return (
-    <AnimationRevealPage disabled>
+    <AnimationRevealPage enabled>
       <Container tw="bg-gray-100 -mx-8 -mt-8 pt-8 px-8">
         <Content2Xl>
           <NavRow>
@@ -200,7 +210,6 @@ export default ({
           <Pricing/>
           <ModulesPlan/>
         </SectionContainer>
-        
         {/* <SectionContainer id="team">
           <Team/>
         </SectionContainer> */}
@@ -211,7 +220,17 @@ export default ({
         <SectionContainer id="faqs">
           <Faqs/>
         </SectionContainer>
+        <SectionContainer id="contact">
+           <ContactUs/>
+           <MapContainer
+           center={[37.358342303352885, -5.986570537333228]}
+           zoom = {100}
+           style = {{ width: '100vw', height: '100vh' }} >
+            <TileLayer url={"https://api.maptiler.com/maps/streets-v2/256/{z}/{x}/{y}.png?key=4Qg1CBLvuefoRWUOrqlJ"} attribution={"https://api.maptiler.com/resources/logo.svg"}/>
+           </MapContainer>
+        </SectionContainer>
         <SectionContainer id="footer">
+          <ScrollToTop class="scroll-to-top" smooth />
           <Footer/>
         </SectionContainer>
       </Container>
