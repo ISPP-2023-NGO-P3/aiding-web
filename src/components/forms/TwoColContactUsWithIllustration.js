@@ -13,6 +13,11 @@ const TextColumn = styled(Column)(props => [
   props.textOnLeft ? tw`md:mr-12 lg:mr-16 md:order-first` : tw`md:ml-12 lg:ml-16 md:order-last`
 ]);
 
+const NavLink = tw.a`mt-4 lg:mt-0 transition duration-300 font-medium pb-1 border-b-2 mr-12 text-gray-700 border-gray-400 hocus:border-gray-700`;
+const PrimaryNavLink = tw(
+  NavLink
+)`text-gray-100 bg-primary-500 px-6 py-3 border-none rounded hocus:bg-primary-900 focus:shadow-outline mt-6 md:mt-4 lg:mt-0`;
+
 const Image = styled.div(props => [
   `background-image: url("${props.imageSrc}");`,
   tw`rounded bg-contain bg-no-repeat bg-center h-full`,
@@ -46,7 +51,11 @@ export default ({
             <Heading>{heading}</Heading>
             <Description>{description}</Description>
             <Description>{description2}</Description>
-            <img src="" alt='imageLink' href="mailto:aiding@gmail.com" ></img>
+            <Description>
+            <PrimaryNavLink target="" href="mailto:aiding@gmail.com">
+              ENVIAR EMAIL
+            </PrimaryNavLink>
+            </Description>
           </TextContent>
         </TextColumn>
       </TwoColumn>
