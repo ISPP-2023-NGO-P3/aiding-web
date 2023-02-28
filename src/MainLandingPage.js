@@ -229,6 +229,8 @@ export default ({
         </SectionContainer> */}
         <SectionContainer id="contact">
            <ContactUs/>
+        </SectionContainer>
+        <SectionContainer id="map">
            <MapContainer
            center={[37.358342303352885, -5.986570537333228]}
            zoom = {100}
