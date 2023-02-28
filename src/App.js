@@ -103,6 +103,8 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 import ComponentRenderer from "ComponentRenderer.js";
 import MainLandingPage from "MainLandingPage.js";
 import ThankYouPage from "ThankYouPage.js";
+import ErrorPage from "ours/ErrorPageRecreate.js";
+import { Navigate } from "react-router-dom";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -120,6 +122,8 @@ export default function App() {
           <Route path="/components/:type/:name" element={<ComponentRenderer />} />
           <Route path="/thank-you" element={<ThankYouPage />} />
           <Route path="/" element={<MainLandingPage />} />
+          <Route path="/404" element={<ErrorPage />} />
+          <Route path="*" element={<Navigate to="/404" />} />
         </Routes>
       </Router>
     </>

@@ -30,7 +30,6 @@ import Footer from 'components/footers/SimpleFiveColumn.js';
 import AboutUs from "components/features/TwoColSingleFeatureWithStats2.js";
 import Faqs from "components/faqs/SingleCol.js";
 import Profiles from "components/cards/ProfileThreeColGrid.js"
-//import ErrorPage from "ours/ErrorPageRecreate.js";
 import ContactUs from "components/forms/TwoColContactUsWithIllustration.js";
 
 // Mapa
@@ -171,9 +170,6 @@ export default ({
               <NavLink target="" href="#about">
                 ¿Quiénes somos?
               </NavLink>
-              <NavLink target="" href="#error">
-                Página de error
-              </NavLink>
               <div tw="md:hidden flex-100 h-0"></div>
               <PrimaryNavLink target="" href="#pricing">
                 Empieza ahora
@@ -224,9 +220,6 @@ export default ({
         <SectionContainer id="faqs">
           <Faqs/>
         </SectionContainer>
-        {/* <SectionContainer id="error">
-          <ErrorPage/>
-        </SectionContainer> */}
         <SectionContainer id="contact">
            <ContactUs/>
            <MapContainer
