@@ -62,7 +62,7 @@ export default ({
   cards = [
     {
       imageSrc: NoeliaIcon,
-      position: "Developer y Secretary",
+      position: "Project Manager",
       name: "Noelia López Durán",
       links: [
         {
@@ -107,7 +107,7 @@ export default ({
     },
     {
       imageSrc: NicoIcon,
-      position: "Project Manajer y Scrum Master",
+      position: "Desarrollador",
       name: "Nicolás Sánchez Mendoza",
       links: [
         {
@@ -137,7 +137,7 @@ export default ({
     },
     {
       imageSrc: MarcosIcon,
-      position: "Developer",
+      position: "Desarrollador",
       name: "Marcos Olmedo Marín",
       links: [
         {
@@ -182,7 +182,7 @@ export default ({
     },
     {
       imageSrc: ManuelDIcon,
-      position: "Product Owner",
+      position: "Project Manager",
       name: "Manuel Domínguez Magdaleno",
       links: [
         {
@@ -197,7 +197,7 @@ export default ({
     },
     {
       imageSrc: CeliaIcon,
-      position: "Product Owner y Secretary",
+      position: "Product Owner y Secretaria",
       name: "Celia Hermoso Soto",
       links: [
         {
@@ -212,7 +212,7 @@ export default ({
     },
     {
       imageSrc: RubenIcon,
-      position: "Developer",
+      position: "Desarrollador",
       name: "Rubén Suárez David",
       links: [
         {
@@ -227,7 +227,7 @@ export default ({
     },
     {
       imageSrc: JuanjoIcon,
-      position: "Developer",
+      position: "Desarrollador",
       name: "Juan José Álvarez Campanón",
       links: [
         {
@@ -242,7 +242,7 @@ export default ({
     },
     {
       imageSrc: MarinaIcon,
-      position: "Developer",
+      position: "Desarrolladora",
       name: "Marina Ramiro Fernández",
       links: [
         {
@@ -257,7 +257,7 @@ export default ({
     },
     {
       imageSrc: AishaIcon,
-      position: "Developer y Directora de Marketing",
+      position: "Desarrolladora y Directora de Marketing",
       name: "Aisha Doris Qazza Cevallos",
       links: [
         {
@@ -272,7 +272,7 @@ export default ({
     },
     {
       imageSrc: JoseIcon,
-      position: "Project Manager y Scrum Master",
+      position: "Desarrollador y Director tecnológico",
       name: "José María Delgado Sánchez",
       links: [
         {
