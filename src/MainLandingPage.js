@@ -4,7 +4,11 @@ import { Rnd } from "react-rnd";
 import { motion } from "framer-motion";
 // import { components } from "ComponentRenderer.js";
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
-import { Container, Content2Xl, ContentWithVerticalPadding } from "components/misc/Layouts";
+import {
+  Container,
+  Content2Xl,
+  ContentWithVerticalPadding,
+} from "components/misc/Layouts";
 import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro";
@@ -26,9 +30,23 @@ import useInView from "helpers/useInView";
 import Modules from "components/features/ThreeColWithSideImageWithPrimaryBackground.js";
 import Pricing from "components/pricing/ThreePlansWithHalfPrimaryBackground.js";
 import ModulesPlan from "components/pricing/ModulesPlan";
-import Team from "components/cards/ProfileThreeColGrid.js"
-import Footer from 'components/footers/SimpleFiveColumn.js';
+import Footer from "components/footers/SimpleFiveColumn.js";
 import AboutUs from "components/features/TwoColSingleFeatureWithStats2.js";
+import Faqs from "components/faqs/SingleCol.js";
+import Profiles from "components/cards/ProfileThreeColGrid.js";
+import ContactUs from "components/forms/TwoColContactUsWithIllustration.js";
+
+// Mapa
+import MapEtsii from "components/map.js";
+
+// Npm installs
+import ScrollToTop from "react-scroll-to-top";
+
+// Css nuestro
+import "./ourscss/scroll.css";
+import "./ourscss/leaflet.css";
+import "leaflet/dist/leaflet.css";
+import "./ourscss/imagestyle.css";
 
 // import Modules from "components/features/ThreeColSimple.js"
 
@@ -39,15 +57,23 @@ const NavLink = tw.a`mt-4 lg:mt-0 transition duration-300 font-medium pb-1 borde
 const PrimaryNavLink = tw(
   NavLink
 )`text-gray-100 bg-primary-500 px-6 py-3 border-none rounded hocus:bg-primary-900 focus:shadow-outline mt-6 md:mt-4 lg:mt-0`;
-const HeroRow = tw(Row)`flex-col lg:flex-row justify-between items-center pt-8 lg:pt-12 pb-16 max-w-screen-2xl mx-auto flex-wrap`;
+const HeroRow = tw(
+  Row
+)`flex-col lg:flex-row justify-between items-center pt-8 lg:pt-12 pb-16 max-w-screen-2xl mx-auto flex-wrap`;
 
 const Column = tw.div`flex-1`;
 
-const UpdateNotice = tw(Column)`w-full flex-auto mb-4 sm:mb-8 rounded px-4 py-3 sm:px-5 sm:py-4 bg-orange-100 text-orange-800 flex items-center sm:items-start md:items-center justify-center lg:justify-start border border-orange-200 text-xs sm:text-sm text-center sm:text-left md:leading-none`;
+const UpdateNotice = tw(
+  Column
+)`w-full flex-auto mb-4 sm:mb-8 rounded px-4 py-3 sm:px-5 sm:py-4 bg-orange-100 text-orange-800 flex items-center sm:items-start md:items-center justify-center lg:justify-start border border-orange-200 text-xs sm:text-sm text-center sm:text-left md:leading-none`;
 const UpdateNoticeIcon = tw(RadioIcon)`w-0 sm:w-5 sm:mr-3`;
 
-const TextColumn = tw(Column)`mx-auto lg:mr-0 max-w-2xl lg:max-w-xl xl:max-w-2xl flex-shrink-0`;
-const Heading = tw(HeadingBase)`text-center lg:text-left text-primary-900 leading-snug`;
+const TextColumn = tw(
+  Column
+)`mx-auto lg:mr-0 max-w-2xl lg:max-w-xl xl:max-w-2xl flex-shrink-0`;
+const Heading = tw(
+  HeadingBase
+)`text-center lg:text-left text-primary-900 leading-snug`;
 const Description = tw(
   DescriptionBase
 )`mt-4 text-center lg:text-left lg:text-base text-gray-700 max-w-lg mx-auto lg:mx-0`;
@@ -69,17 +95,24 @@ const Image = tw.img`max-w-full rounded-t sm:rounded`;
 
 const SectionContainer = tw(ContentWithVerticalPadding)``;
 const SectionHeading = tw(HeadingBase)`text-primary-900`;
-const SectionDescription = tw(DescriptionBase)`text-center mx-auto text-gray-600 max-w-4xl`;
+const SectionDescription = tw(
+  DescriptionBase
+)`text-center mx-auto text-gray-600 max-w-4xl`;
 
 const PreviewCards = tw.div`flex flex-wrap -mr-12`;
 const PreviewCardContainer = tw.div`mt-24 mx-auto md:mx-0 max-w-lg w-full md:w-1/2 lg:w-1/3 pr-12`;
 const PreviewCard = tw(motion.a)`block rounded-lg shadow-raised`;
 const PreviewCardImageContainer = tw.div`rounded-t-lg border-0 border-b-0`;
 const PreviewCardImage = styled(motion.div)`
-  ${props => css`background-image: url("${props.$imageSrc}");`}
+  ${(props) =>
+    css`
+      background-image: url("${props.$imageSrc}");
+    `}
   ${tw`h-128 md:h-144 bg-cover bg-left-top`}
 `;
-const PreviewButton = tw(PrimaryButtonBase)`w-full rounded-b-lg rounded-t-none py-5 font-semibold`;
+const PreviewButton = tw(
+  PrimaryButtonBase
+)`w-full rounded-b-lg rounded-t-none py-5 font-semibold`;
 
 const ComponentsContainer = tw.div`mt-24`;
 const ComponentsType = tw.h3`text-4xl font-black text-primary-500 border-b-4 border-primary-500 inline-block`;
@@ -108,7 +141,7 @@ export default ({
   //innerPages = components.innerPages,
   //blocks = components.blocks,
   heading = "Configura el futuro de tu organización",
-  description = "Aiding está a su disposición para ayudarle a la gestión de su organización mediante la creación y personalización de su web."
+  description = "Aiding está a su disposición para ayudarle a la gestión de su organización mediante la creación y personalización de su web.",
 }) => {
   /*
    * Using gtag like this because we only want to use Google Analytics when Main Landing Page is rendered
@@ -117,19 +150,19 @@ export default ({
   useEffect(() => {
     window.gtag("js", new Date());
     window.gtag("config", "UA-45799926-9");
-  }, [])
+  }, []);
 
   const previewImageAnimationVariants = {
     rest: {
-      backgroundPositionY: "0%"
+      backgroundPositionY: "0%",
     },
     hover: {
       backgroundPositionY: "100%",
-      transition: { type: "tween", ease: "linear", duration: 5 }
-    }
+      transition: { type: "tween", ease: "linear", duration: 5 },
+    },
   };
 
- /*  const noOfLandingPages = Object.keys(landingPages).length;
+  /*  const noOfLandingPages = Object.keys(landingPages).length;
   const noOfInnerPages = Object.keys(innerPages).length;
   const noOfComponentBlocks = Object.values(blocks).reduce((acc, block) => acc + Object.keys(block.elements).length, 0); */
 
@@ -140,7 +173,7 @@ export default ({
   ];
 
   return (
-    <AnimationRevealPage disabled>
+    <AnimationRevealPage enabled>
       <Container tw="bg-gray-100 -mx-8 -mt-8 pt-8 px-8">
         <Content2Xl>
           <NavRow>
@@ -158,8 +191,8 @@ export default ({
                 ¿Quiénes somos?
               </NavLink>
               <div tw="md:hidden flex-100 h-0"></div>
-              <PrimaryNavLink target="" href="#pricing">
-                Empieza ahora
+              <PrimaryNavLink target="" href="https://sprint2-dot-ispp-2023-l6.nw.r.appspot.com/">
+                Descubre nuestra aplicación
               </PrimaryNavLink>
             </div>
           </NavRow>
@@ -179,7 +212,9 @@ export default ({
                 <PrimaryButton href={primaryButtonUrl} css={buttonRoundedCss}>
                   {primaryButtonText}
                 </PrimaryButton>
-                <SecondaryButton href={secondaryButtonUrl}>{secondaryButtonText}</SecondaryButton>
+                <SecondaryButton href={secondaryButtonUrl}>
+                  {secondaryButtonText}
+                </SecondaryButton>
               </Actions>
             </TextColumn>
             <ImageColumn>
@@ -188,28 +223,30 @@ export default ({
               </ImageContainer>
             </ImageColumn>
           </HeroRow>
-          
         </Content2Xl>
         <SectionContainer id="modules">
-          <Modules/>
+          <Modules />
         </SectionContainer>
         <SectionContainer id="pricing">
-          <Pricing/>
-          <ModulesPlan/>
+          <Pricing />
+          <ModulesPlan />
         </SectionContainer>
-        
-        {/* <SectionContainer id="team">
-          <Team/>
-        </SectionContainer> */}
         <SectionContainer id="about">
-          <AboutUs/>
+          <AboutUs />
+          <Profiles />
+        </SectionContainer>
+        <SectionContainer id="faqs">
+          <Faqs />
+        </SectionContainer>
+        <SectionContainer id="contact">
+          <ContactUs />
+          <MapEtsii/>
         </SectionContainer>
         <SectionContainer id="footer">
-          <Footer/>
+          <ScrollToTop class="scroll-to-top" smooth />
+          <Footer />
         </SectionContainer>
       </Container>
     </AnimationRevealPage>
   );
 };
-
-

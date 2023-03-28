@@ -8,7 +8,22 @@ import {SectionDescription} from "components/misc/Typography";
 import { ReactComponent as TwitterIcon} from "images/twitter-icon.svg";
 import { ReactComponent as LinkedinIcon} from "images/linkedin-icon.svg";
 import { ReactComponent as GithubIcon } from "images/github-icon.svg";
-
+import { ReactComponent as EmailIcon } from "images/email-newsletter-icon.svg";
+import NoeliaIcon from "images/fotos/noelia.png";
+import AishaIcon from "images/fotos/aisha.png";
+import CarlosIcon from "images/fotos/carlos.png";
+import JoseIcon from "images/fotos/jose.png";
+import JuanjoIcon from "images/fotos/juanjo.png";
+import MarcosIcon from "images/fotos/marcos.png";
+import ManuelDIcon from "images/fotos/manuelD.png";
+import ManuelSIcon from "images/fotos/manuelS.png";
+import MarinaIcon from "images/fotos/marina.png";
+import NicoIcon from "images/fotos/nico.png";
+import OlivaIcon from "images/fotos/oliva.png";
+import RickIcon from "images/fotos/rick.png";
+import RubenIcon from "images/fotos/ruben.png";
+import CeliaIcon from "images/fotos/celia.png";
+import RosaIcon from "images/fotos/rosa.png";
 const HeadingContainer = tw.div``
 const Heading = tw(SectionHeading)``
 const Subheading = tw(SubheadingBase)`text-center mb-3`
@@ -18,7 +33,7 @@ const Cards = tw.div`flex flex-wrap flex-row justify-center sm:max-w-2xl lg:max-
 const Card = tw.div`mt-24 w-full sm:w-1/2 lg:w-1/3 flex flex-col items-center`
 const CardImage = styled.div`
   ${props => css`background-image: url("${props.imageSrc}");`}
-  ${tw`w-64 h-64 bg-contain bg-center rounded`}
+  ${tw`w-64 h-64 bg-contain bg-cover rounded`}
 `
 const CardContent = styled.div`
   ${tw`flex flex-col items-center mt-6`}
@@ -41,120 +56,231 @@ const CardLinks = styled.div`
 `
 
 export default ({
-  heading = "Meet These Fine Folks.",
-  subheading = "Our Team",
-  description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  heading = "Nuestro equipo.",
+  subheading = "",
+  description = "",
   cards = [
     {
-      imageSrc: "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&fit=facearea&facepad=2.95&w=512&h=512&q=80",
-      position: "Founder",
-      name: "Adam Cuppy",
+      imageSrc: NoeliaIcon,
+      position: "Project Manager",
+      name: "Noelia López Durán",
       links: [
         {
-          url: "https://twitter.com",
-          icon: TwitterIcon,
+          url: "mailto:noelopdur@alum.us.es",
+          icon: EmailIcon,
         },
         {
-          url: "https://linkedin.com",
-          icon: LinkedinIcon,
-        },
-        {
-          url: "https://github.com",
+          url: " https://github.com/lNoelia ",
           icon: GithubIcon,
         },
       ],
     },
     {
-      imageSrc: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&fit=facearea&facepad=2.95&w=512&h=512&q=80",
-      position: "Sr. Designer",
-      name: "Charlotte Hale",
+      imageSrc: RosaIcon,
+      position: "Project Manager y Scrum Master",
+      name: "Rosa Maria Molina Arregui",
       links: [
         {
-          url: "https://twitter.com",
-          icon: TwitterIcon,
+          url: "mailto:rosmolarr@alum.us.es",
+          icon: EmailIcon,
         },
         {
-          url: "https://linkedin.com",
-          icon: LinkedinIcon,
-        },
-        {
-          url: "https://github.com",
+          url: "https://github.com/rosmolarr",
           icon: GithubIcon,
         },
       ],
     },
     {
-      imageSrc: "https://images.unsplash.com/photo-1517070208541-6ddc4d3efbcb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&fit=facearea&facepad=2.95&w=512&h=512&q=80",
-      position: "Jr. Designer",
-      name: "Silvester Wize",
-      links: [
-        {
-          url: "https://twitter.com",
-          icon: TwitterIcon,
-        },
-        {
-          url: "https://linkedin.com",
-          icon: LinkedinIcon,
-        },
-        {
-          url: "https://github.com",
-          icon: GithubIcon,
-        },
-      ],
-    },
-    {
-      imageSrc: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&fit=facearea&facepad=2.95&w=512&h=512&q=80",
-      position: "Lead Developer",
-      name: "Himali Turn",
-      links: [
-        {
-          url: "https://twitter.com",
-          icon: TwitterIcon,
-        },
-        {
-          url: "https://linkedin.com",
-          icon: LinkedinIcon,
-        },
-        {
-          url: "https://github.com",
-          icon: GithubIcon,
-        },
-      ],
-    },
-    {
-      imageSrc: "https://images.unsplash.com/photo-1546820389-44d77e1f3b31?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&fit=facearea&facepad=3.45&w=512&h=512&q=80",
-      position: "Sr. Developer",
-      name: "Troye Sivan",
-      links: [
-        {
-          url: "https://twitter.com",
-          icon: TwitterIcon,
-        },
-        {
-          url: "https://linkedin.com",
-          icon: LinkedinIcon,
-        },
-        {
-          url: "https://github.com",
-          icon: GithubIcon,
-        },
-      ],
-    },
-    {
-      imageSrc: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&fit=facearea&facepad=3.45&w=512&h=512&q=80",
+      imageSrc: ManuelSIcon,
       position: "Quality Assurance",
-      name: "Holo Wo",
+      name: "Manuel Sánchez Rodríguez",
       links: [
         {
-          url: "https://twitter.com",
-          icon: TwitterIcon,
+          url: "mailto:manuelsanchez595@gmail.com",
+          icon: EmailIcon,
         },
         {
-          url: "https://linkedin.com",
-          icon: LinkedinIcon,
+          url: "https://github.com/mansanrod4 ",
+          icon: GithubIcon,
+        },
+      ],
+    },
+    {
+      imageSrc: NicoIcon,
+      position: "Desarrollador",
+      name: "Nicolás Sánchez Mendoza",
+      links: [
+        {
+          url: "mailto:nicsanmen@alum.us.es",
+          icon: EmailIcon,
         },
         {
-          url: "https://github.com",
+          url: "https://github.com/nicsanmen",
+          icon: GithubIcon,
+        },
+      ],
+    },
+    {
+      imageSrc: OlivaIcon,
+      position: "Product Owner y Directora de Marketing",
+      name: "Oliva Sánchez Rodríguez",
+      links: [
+        {
+          url: "mailto:sanchezroliva@gmail.com",
+          icon: EmailIcon,
+        },
+        {
+          url: "https://github.com/olisanrod",
+          icon: GithubIcon,
+        },
+      ],
+    },
+    {
+      imageSrc: MarcosIcon,
+      position: "Desarrollador",
+      name: "Marcos Olmedo Marín",
+      links: [
+        {
+          url: "mailto:emolmedom2000@gmail.com",
+          icon: EmailIcon,
+        },
+        {
+          url: "https://github.com/marolmmar1",
+          icon: GithubIcon,
+        },
+      ],
+    },
+    {
+      imageSrc: CarlosIcon,
+      position: "Quality Assurance",
+      name: "Carlos Delgado Becerril",
+      links: [
+        {
+          url: "mailto:cardelbec@alum.us.es",
+          icon: EmailIcon,
+        },
+        {
+          url: "https://github.com/cardelbec",
+          icon: GithubIcon,
+        },
+      ],
+    },
+    {
+      imageSrc: RickIcon,
+      position: "Quality Assurance",
+      name: "Ricardo Nadal Garcia",
+      links: [
+        {
+          url: "mailto:nadalrick@gmail.com",
+          icon: EmailIcon,
+        },
+        {
+          url: "https://github.com/Rick3600",
+          icon: GithubIcon,
+        },
+      ],
+    },
+    {
+      imageSrc: ManuelDIcon,
+      position: "Project Manager",
+      name: "Manuel Domínguez Magdaleno",
+      links: [
+        {
+          url: "mailto:mandommag@alum.us.es",
+          icon: EmailIcon,
+        },
+        {
+          url: "https://github.com/Manueldm01",
+          icon: GithubIcon,
+        },
+      ],
+    },
+    {
+      imageSrc: CeliaIcon,
+      position: "Product Owner y Secretaria",
+      name: "Celia Hermoso Soto",
+      links: [
+        {
+          url: "mailto:celhersot@alum.us.es",
+          icon: EmailIcon,
+        },
+        {
+          url: "https://github.com/celhersot",
+          icon: GithubIcon,
+        },
+      ],
+    },
+    {
+      imageSrc: RubenIcon,
+      position: "Desarrollador",
+      name: "Rubén Suárez David",
+      links: [
+        {
+          url: "mailto:rubsuadav@alum.us.es",
+          icon: EmailIcon,
+        },
+        {
+          url: "https://github.com/rubsuadav",
+          icon: GithubIcon,
+        },
+      ],
+    },
+    {
+      imageSrc: JuanjoIcon,
+      position: "Desarrollador",
+      name: "Juan José Álvarez Campanón",
+      links: [
+        {
+          url: "mailto:Juanjoalvarezcampanon@gmail.com",
+          icon: EmailIcon,
+        },
+        {
+          url: "https://github.com/juaalvcam",
+          icon: GithubIcon,
+        },
+      ],
+    },
+    {
+      imageSrc: MarinaIcon,
+      position: "Desarrolladora",
+      name: "Marina Ramiro Fernández",
+      links: [
+        {
+          url: "mailto:marinaramirofde@gmail.com",
+          icon: EmailIcon,
+        },
+        {
+          url: "https://github.com/marinaramirofde",
+          icon: GithubIcon,
+        },
+      ],
+    },
+    {
+      imageSrc: AishaIcon,
+      position: "Desarrolladora y Directora de Marketing",
+      name: "Aisha Doris Qazza Cevallos",
+      links: [
+        {
+          url: "mailto:aishaqazza@gmail.com",
+          icon: EmailIcon,
+        },
+        {
+          url: "https://github.com/aisqazcev",
+          icon: GithubIcon,
+        },
+      ],
+    },
+    {
+      imageSrc: JoseIcon,
+      position: "Desarrollador y Director tecnológico",
+      name: "José María Delgado Sánchez",
+      links: [
+        {
+          url: "mailto:josdelsan9@alum.us.es",
+          icon: EmailIcon,
+        },
+        {
+          url: "https://github.com/Josdelsan",
           icon: GithubIcon,
         },
       ],

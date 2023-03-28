@@ -77,7 +77,8 @@ export default ({
     { imageSrc: ReliableIconImage, title: "Noticias", description: "Este módulo permite la gestión de comunicaciones entre los propios usuarios de nuestros servicios a través de un tablón de anuncios." },
     { imageSrc: FastIconImage, title: "Beneficiarios", description: "Este módulo permite la registro, gestión y comunicación con los beneficiarios." },
     { imageSrc: SimpleIconImage, title: "Voluntarios y turnos", description: "Este módulo permite a la organización registrar, gestionar, organizar y realizar comunicaciones con sus voluntarios y sus turnos." },
-    { imageSrc: SimpleIconImage, title: "Subvenciones", description: "Este módulo facilita la gestión de información sobre las subvenciones y donaciones recibidas, ambas de carácter exclusivamente monetario." }
+    { imageSrc: SimpleIconImage, title: "Subvenciones", description: "Este módulo facilita la gestión de información sobre las subvenciones y donaciones recibidas, ambas de carácter exclusivamente monetario." },
+    { imageSrc: FastIconImage, title: "Eventos", description: "Este módulo permite gestionar eventos y talleres junto a sus participantes." }
     
   ];
 
